@@ -15,6 +15,7 @@ def count_inversions(arr):
         merged, split_inversions = merge_and_count(left, right)
         
         return merged, left_inversions + right_inversions + split_inversions
+
 def merge_and_count(left, right):
         """
         Merge two sorted arrays and count the number of split inversions.
